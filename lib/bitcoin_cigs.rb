@@ -101,7 +101,7 @@ module BitcoinCigs
     
       public_key = ::BitcoinCigs::PublicKey.new(g, q, compressed)
       
-      public_key_to_bc_address(public_key.ser(), 40)
+      public_key_to_bc_address(public_key.ser(), 0x28)
     end
     
     def sign_message(wallet_key, message, options = {:network => :mainnet})
