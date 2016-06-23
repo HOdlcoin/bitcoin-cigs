@@ -163,7 +163,7 @@ module BitcoinCigs
     private
     
     def format_message_to_sign(message)
-      "\x18HOdlcoin Signed Message:\n#{::BitcoinCigs::CompactInt.new(message.size).encode}#{message}"
+      "\x18Bitcoin Signed Message:\n#{::BitcoinCigs::CompactInt.new(message.size).encode}#{message}"
     end
     
     def random_k
