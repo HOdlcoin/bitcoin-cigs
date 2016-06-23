@@ -371,7 +371,7 @@ class EC_KEY(object):
         self.secret = secret
 
 def format_msg_to_sign(msg):
-    return "\x18HOdlcoin Signed Message:\n"+chr(len(msg))+msg  #todo: check 18
+    return "\x18Bitcoin Signed Message:\n"+chr(len(msg))+msg  #todo: check 18
 
 def sqrt_mod(a, p):
     return pow(a, (p+1)/4, p)
